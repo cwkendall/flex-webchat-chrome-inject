@@ -1,18 +1,23 @@
-body, #root {
+body, #webchatRoot {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
   display: flex;
   font-family: 'Open Sans', sans-serif;
 }
 
-body {
+.Twilio-MainContainer {
+  left: 20px;
+  z-index:500;
+}
+
+/* body {
   position: relative;
   background-size: cover;
   background-image: url("/img/background.png");
   background-color: #6D7697;
-}
+} */
 
 body:after {
   content: "";

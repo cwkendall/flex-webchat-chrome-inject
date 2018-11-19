@@ -5,9 +5,19 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
+var elemDiv = document.createElement('div');
+elemDiv.setAttribute('id', 'webchatRoot');
+document.body.appendChild(elemDiv);
+
+// We can put in whatever context we want here
+window.appConfig.context={
+  username: "Customer",
+  topic: "support",
+}
+
 ReactDOM.render(
     <App configuration={window.appConfig} />,
-    document.getElementById("root")
+    document.getElementById("webchatRoot")
 );
 
 registerServiceWorker();
