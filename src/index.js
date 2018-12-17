@@ -9,12 +9,6 @@ var elemDiv = document.createElement('div');
 elemDiv.setAttribute('id', 'webchatRoot');
 document.body.appendChild(elemDiv);
 
-// We can put in whatever context we want here
-window.appConfig.context={
-  username: "Customer",
-  topic: "support",
-}
-
 ReactDOM.render(
     <App configuration={window.appConfig} />,
     document.getElementById("webchatRoot")

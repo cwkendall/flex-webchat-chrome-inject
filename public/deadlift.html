@@ -1,1 +1,19 @@
-<div>This is deadlift</div>
+<!doctype html>
+<html>
+<head>
+  <title>This is deadlift</title>
+  <script src="deadlift.js"></script>
+</head>
+<body>
+  <h3>This is deadlift</h3>
+  <label>Account SID: </label><input style="width: 100%;" autocomplete="true" id="deadlift-account" name="account" type="text" pattern="^AC[a-f0-9]{32}$">
+  <label>Flow SID: </label><input style="width: 100%;" autocomplete="true" id="deadlift-flow" name="flow" type="text" pattern="^FO[a-f0-9]{32}$">
+  <label>Context: </label><textarea style="height:150px; width: 200px;"id="deadlift-context" name="context">
+  {
+    username: "Customer",
+    topic: "support",
+  }
+  </textarea>
+  <button class="deadlift-button">Inject</button>
+</body>
+</html>
